@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pet Shop ABC</title>
+
+  <!-- CSS do Bootstrap -->
+  <link href="./static/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+  <!-- Folha de estilos em comum para todas as páginas -->
+  <link href="./static/css/style.css" rel="stylesheet">
+</head>
+
+<body class="bg-light">
+
+  <div class="container">
+    <main>
+      <!-- Cabeçalho da página de checkout -->
+      <div class="py-5 text-center">
+        <h2>Finalizar Compra</h2>
+        <p class="lead">Finalize sua compra.</p>
+      </div>
+
+      <div class="row g-5">
+        <!-- Resumo do carrinho -->
+        <div class="col-md-5 col-lg-4 order-md-last">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-primary">Seu carrinho</span>
+            <span class="badge bg-primary rounded-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Ração seca 1</h6>
+                <small class="text-muted">Descrição breve</small>
+              </div>
+              <span class="text-muted">R$ 5,00</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Ração úmida 1</h6>
+                <small class="text-muted">Descrição breve</small>
+              </div>
+              <span class="text-muted">R$ 7,00</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Banho porte pequeno</h6>
+                <small class="text-muted">Descrição breve</small>
+              </div>
+              <span class="text-muted">R$ 50,00</span>
+            </li>
+            <li class="list-group-item d-flex justify-content-between">
+              <span>Total (R$)</span>
+              <strong>R$ 63,00</strong>
+            </li>
+          </ul>
+        </div>
+        <!-- Formulário de endereço de cobrança -->
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3">Endereço de cobrança</h4>
+          <form class="needs-validation" novalidate>
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">Nome</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Nome válido é obrigatório.
+                </div>
+              </div>
+
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Sobrenome</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                <div class="invalid-feedback">
+                  Sobrenome válido é obrigatório.
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="email" class="form-label">Email <span class="text-muted">(Opcional)</span></label>
+                <input type="email" class="form-control" id="email" placeholder="seuemail@example.com">
+                <div class="invalid-feedback">
+                  Por favor, insira um endereço de email válido para atualizações de envio.
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="address" class="form-label">Endereço</label>
+                <input type="text" class="form-control" id="address" placeholder="Rua Principal, 123" required>
+                <div class="invalid-feedback">
+                  Por favor, insira seu endereço de envio.
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="address2" class="form-label">Complemento <span class="text-muted">(Opcional)</span></label>
+                <input type="text" class="form-control" id="address2" placeholder="Apartamento ou suite">
+              </div>
+
+              <div class="col-md-5">
+                <label for="country" class="form-label">País</label>
+                <select class="form-select" id="country" required>
+                  <option value="">Escolha...</option>
+                  <option>Estados Unidos</option>
+                </select>
+                <div class="invalid-feedback">
+                  Por favor, selecione um país válido.
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <label for="state" class="form-label">Estado</label>
+                <select class="form-select" id="state" required>
+                  <option value="">Escolha...</option>
+                  <option>California</option>
+                </select>
+                <div class="invalid-feedback">
+                  Por favor, forneça um estado válido.
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <label for="zip" class="form-label">CEP</label>
+                <input type="text" class="form-control" id="zip" placeholder="" required>
+                <div class="invalid-feedback">
+                  CEP é obrigatório.
+                </div>
+              </div>
+            </div>
+
+            <hr class="my-4">
+
+            <!-- Opção de tele-busca -->
+            <div class="row">
+              <div class="form-check col-6 d-flex align-items-center justify-content-center">
+                <input type="checkbox" class="form-check-input" id="telebusca-checkbox">
+                <label class="form-check-label" for="same-address" style="margin-left: 10px;">Desejo agendar tele-busca
+                  nesse endereço.</label>
+              </div>
+              <div class="form-check col-6">
+                <input type="datetime-local" class="form-control" id="telebusca-data" disabled>
+              </div>
+            </div>
+
+            <hr class="my-4">
+
+            <!-- Seção de pagamento -->
+            <h4 class="mb-3">Pagamento</h4>
+
+            <div class="my-3">
+              <div class="form-check">
+                <input id="credit" name="paymentMethod" type="radio" class="form-check-input" checked required>
+                <label class="form-check-label" for="credit">Cartão de crédito</label>
+              </div>
+              <div class="form-check">
+                <input id="debit" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="debit">Cartão de débito</label>
+              </div>
+              <div class="form-check">
+                <input id="paypal" name="paymentMethod" type="radio" class="form-check-input" required>
+                <label class="form-check-label" for="paypal">PayPal</label>
+              </div>
+            </div>
+
+            <div class="row gy-3">
+              <div class="col-md-6">
+                <label for="cc-name" class="form-label">Nome no cartão</label>
+                <input type="text" class="form-control" id="cc-name" placeholder="" required>
+                <small class="text-muted">Nome completo como exibido no cartão</small>
+                <div class="invalid-feedback">
+                  Nome no cartão é obrigatório
+                </div>
+              </div>
+
+              <div class="col-md-6">
+                <label for="cc-number" class="form-label">Número do cartão de crédito</label>
+                <input type="text" class="form-control" id="cc-number" placeholder="" required>
+                <div class="invalid-feedback">
+                  Número do cartão de crédito é obrigatório
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <label for="cc-expiration" class="form-label">Validade</label>
+                <input type="text" class="form-control" id="cc-expiration" placeholder="" required>
+                <div class="invalid-feedback">
+                  Data de validade é obrigatória
+                </div>
+              </div>
+
+              <div class="col-md-3">
+                <label for="cc-cvv" class="form-label">CVV</label>
+                <input type="text" class="form-control" id="cc-cvv" placeholder="" required>
+                <div class="invalid-feedback">
+                  Código de segurança é obrigatório
+                </div>
+              </div>
+            </div>
+
+            <hr class="my-4">
+
+            <button class="w-100 btn btn-primary btn-lg" type="submit">Continuar para o pagamento</button>
+          </form>
+        </div>
+      </div>
+    </main>
+
+  </div>
+
+  <!-- JavaScript do Bootstrap -->
+  <script src="./static/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    $(document).ready(function () {
+      // Habilita ou desabilita o campo de data de tele-busca com base no checkbox
+      document.getElementById('telebusca-checkbox').addEventListener('change', function () {
+        if (this.checked) {
+          document.getElementById('telebusca-data').disabled = false;
+        } else {
+          document.getElementById('telebusca-data').disabled = true;
+        }
+      });
+    });
+  </script>
+</body>
+
+</html>

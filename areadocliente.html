@@ -1,0 +1,144 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pet Shop ABC</title>
+
+  <!-- CSS do Bootstrap -->
+  <link href="./static/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+  
+  <!-- Folha de estilos em comum para todas as páginas -->
+  <link href="./static/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Pet Shop ABC</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="produtos.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="servicos.html" tabindex="-1" aria-disabled="true">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="cliente.html" tabindex="-1" aria-disabled="true">Área do Cliente</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Busca" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Cabeçalho da área do cliente -->
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal">Área do cliente</h1>
+      <p class="fs-5 text-muted">Realize abaixo seu cadastro.</p>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- Formulário de cadastro -->
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-md-6">
+          <form>
+            <div class="mb-3">
+              <label for="name" class="form-label">Nome</label>
+              <input type="text" class="form-control" id="name" placeholder="Digite seu nome">
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Endereço de e-mail</label>
+              <input type="email" class="form-control" id="email" placeholder="Digite seu e-mail">
+            </div>
+            <div class="mb-3">
+              <label for="password" class="form-label">Senha</label>
+              <input type="password" class="form-control" id="password" placeholder="Digite sua senha">
+            </div>
+            <div class="mb-3">
+              <label for="confirmPassword" class="form-label">Confirmar Senha</label>
+              <input type="password" class="form-control" id="confirmPassword" placeholder="Confirme sua senha">
+            </div>
+            <hr>
+            <h5>Adicionar Pet</h5>
+            <div class="mb-3">
+              <label for="petName" class="form-label">Nome do Pet</label>
+              <input type="text" class="form-control" id="petName" placeholder="Digite o nome do pet">
+            </div>
+            <div class="mb-3">
+              <label for="petType" class="form-label">Tipo de Pet</label>
+              <input type="text" class="form-control" id="petType" placeholder="Digite o tipo de pet">
+            </div>
+            <div class="mb-3">
+              <label for="petAge" class="form-label">Idade do Pet</label>
+              <input type="number" class="form-control" id="petAge" placeholder="Digite a idade do pet">
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="petSize" id="petSize1" value="pequeno">
+              <label class="form-check-label" for="petSize1">
+                Porte Pequeno
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="radio" name="petSize" id="petSize2" value="grande">
+              <label class="form-check-label" for="petSize2">
+                Porte Grande
+              </label>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- Rodapé -->
+    <footer class="container">
+      <p class="float-end"><a href="#">Voltar ao topo</a></p>
+      <p>&copy; 2024–2024 Pet Shop ABC. &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
+    </footer>
+  </main>
+
+  <!-- JavaScript do Bootstrap -->
+  <script src="./static/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

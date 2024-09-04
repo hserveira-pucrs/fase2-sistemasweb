@@ -1,0 +1,177 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pet Shop ABC</title>
+
+  <!-- CSS do Bootstrap -->
+  <link href="./static/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    .bd-placeholder-img {
+      font-size: 1.125rem;
+      text-anchor: middle;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      user-select: none;
+    }
+
+    @media (min-width: 768px) {
+      .bd-placeholder-img-lg {
+        font-size: 3.5rem;
+      }
+    }
+  </style>
+
+  <!-- Folha de estilos em comum para todas as páginas -->
+  <link href="./static/css/style.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <header>
+    <!-- Barra de navegação -->
+    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Pet Shop ABC</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse"
+          aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="produtos.html">Produtos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="servicos.html" tabindex="-1" aria-disabled="true">Serviços</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="areadocliente.html" tabindex="-1" aria-disabled="true">Área do Cliente</a>
+            </li>
+          </ul>
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Busca" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- Cabeçalho de serviços -->
+    <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+      <h1 class="display-4 fw-normal">Serviços</h1>
+      <p class="fs-5 text-muted">Veja abaixo nossa lista de serviços para seu pet.</p>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <!-- Container de serviços -->
+    <div class="container marketing mt-3">
+
+      <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="col">
+          <div class="card">
+            <img src="https://picsum.photos/220/140" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Banho porte pequeno</h5>
+              <p class="card-text">R$ 50,00</p>
+              <p class="card-text">Agende um banho relaxante para o seu pet e deixe-o com uma aparência incrível. Nossos
+                profissionais experientes irão cuidar do seu animal de estimação com todo carinho e atenção. Aproveite
+                nossos preços especiais e agende agora mesmo!</p>
+              <a href="checkout.html" class="btn btn-primary">Agendar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://picsum.photos/220/140" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tosa porte pequeno</h5>
+              <p class="card-text">R$ 80,00</p>
+              <p class="card-text">Agende um banho relaxante para o seu pet e deixe-o com uma aparência incrível. Nossos
+                profissionais experientes irão cuidar do seu animal de estimação com todo carinho e atenção. Aproveite
+                nossos preços especiais e agende agora mesmo!</p>
+              <a href="checkout.html" class="btn btn-primary">Agendar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://picsum.photos/220/140" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Banho + tosa porte pequeno</h5>
+              <p class="card-text">R$ 120,00</p>
+              <p class="card-text">Agende um banho relaxante para o seu pet e deixe-o com uma aparência incrível. Nossos
+                profissionais experientes irão cuidar do seu animal de estimação com todo carinho e atenção. Aproveite
+                nossos preços especiais e agende agora mesmo!</p>
+              <a href="checkout.html" class="btn btn-primary">Agendar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://picsum.photos/220/140" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Banho porte grande</h5>
+              <p class="card-text">R$ 70,00</p>
+              <p class="card-text">Agende um banho relaxante para o seu pet e deixe-o com uma aparência incrível. Nossos
+                profissionais experientes irão cuidar do seu animal de estimação com todo carinho e atenção. Aproveite
+                nossos preços especiais e agende agora mesmo!</p>
+              <a href="checkout.html" class="btn btn-primary">Agendar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://picsum.photos/220/140" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Tosa porte grande</h5>
+              <p class="card-text">R$ 90,00</p>
+              <p class="card-text">Agende um banho relaxante para o seu pet e deixe-o com uma aparência incrível. Nossos
+                profissionais experientes irão cuidar do seu animal de estimação com todo carinho e atenção. Aproveite
+                nossos preços especiais e agende agora mesmo!</p>
+              <a href="checkout.html" class="btn btn-primary">Agendar</a>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+          <div class="card">
+            <img src="https://picsum.photos/220/140" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">Banho + tosa porte grande</h5>
+              <p class="card-text">R$ 140,00</p>
+              <p class="card-text">Agende um banho relaxante para o seu pet e deixe-o com uma aparência incrível. Nossos
+                profissionais experientes irão cuidar do seu animal de estimação com todo carinho e atenção. Aproveite
+                nossos preços especiais e agende agora mesmo!</p>
+              <a href="checkout.html" class="btn btn-primary">Agendar</a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- /.container -->
+
+    <hr class="featurette-divider">
+
+    <!-- Rodapé -->
+    <footer class="container">
+      <p class="float-end"><a href="#">Voltar ao topo</a></p>
+      <p>&copy; 2024–2024 Pet Shop ABC. &middot; <a href="#">Privacidade</a> &middot; <a href="#">Termos</a></p>
+    </footer>
+  </main>
+
+  <!-- JavaScript do Bootstrap -->
+  <script src="./static/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
